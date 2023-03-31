@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Remove</title>
+  <link rel="icon" type="image/x-icon" href="../img/whale.png">
+  <!-- Font Awesome -->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/a6bbee7ca3.js"></script>
+  <!-- UIkit CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" rel="stylesheet"/>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+  <!-- Select2 Menu -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="../main.css" rel="stylesheet">
+  <link href="../css/remove.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="navigation uk-flex uk-flex-column uk-width-1-1">
+    <div class="navbar">
+      <a href="../dashboard.html"><button class="uk-button uk-button-default uk-align-left" id="home-btn"><i class="fa-solid fa-chevron-left"></i>DASHBOARD</button></a>
+      <div class="uk-align-right theme-btns">
+        <div class="uk-button-group">
+          <button class="uk-button uk-button-default theme-btn" id="theme-btn-dark"><i class="fa-regular fa-sun"></i></button>
+          <button class="uk-button uk-button-default theme-btn" id="theme-btn-light"><i class="fa-regular fa-moon"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <h1>SİL</h1>
+      <hr/>
+    </div>
+  </div>
+  <div class="alert-body uk-flex uk-flex-center">
+    <div class="alert-content uk-width-2-3">
+      <div class="uk-alert-danger" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <h4><i class="fa-solid fa-circle-exclamation"></i>https://alphav1.drupal.hajans.net sitesi siliniyor...</h4>
+        <p>https://alpha1.drupal.hajans.net sitesini silmek üzeresiniz.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-body uk-flex uk-flex-center">
+    <form class="uk-form-horizontal uk-width-3-4">
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-unvan">Ünvan</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" id="form-horizontal-unvan" placeholder="Placeholder" type="text" disabled>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-marka">Marka Adı</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" id="form-horizontal-marka" placeholder="Placeholder" type="text" disabled>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center" id="domain-container">
+        <label class="uk-form-label" for="form-horizontal-domain">Domain</label>
+        <div class="uk-form-controls">
+          <div class="test">
+            <input class="uk-input form-domain" id="form-horizontal-domain" placeholder="Placeholder" type="text" disabled>
+            <select id="domain-selector" disabled>
+              <option value="1">.com</option>
+              <option value="2">.net</option>
+              <option value="3">.org</option>
+              <option value="4">.gov</option>
+              <option value="5">.edu</option>
+              <option value="6">.int</option>
+              <option value="7">.info</option>
+              <option value="8">.asia</option>
+              <option value="9">.aero</option>
+              <option value="10">.biz</option>
+              <option value="11">.cat</option>
+              <option value="12">.coop</option>
+              <option value="13">.int</option>
+              <option value="14">.jobs</option>
+              <option value="15">.mil</option>
+              <option value="16">.mobi</option>
+              <option value="17">.museum</option>
+              <option value="18">.pro</option>
+              <option value="19">.tel</option>
+              <option value="20">.travel</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-server">Server</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" id="form-horizontal-server" disabled>
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-ip">IP Adresi</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" id="form-horizontal-ip" disabled>
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-uygulama">Uygulama</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" id="form-horizontal-uygulama" disabled>
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-branch">Branch</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" id="form-horizontal-branch" disabled>
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <div class="uk-form-controls uk-form-controls-text uk-width-1-1 uk-flex uk-flex-around">
+          <label><input class="uk-radio" name="radio1" type="radio" id="SSL" disabled> Let's Encrypt</label>
+          <label><input class="uk-radio" name="radio1" type="radio" id="evSSL" disabled> EV SSL</label>
+          <label><input class="uk-radio" name="radio1" type="radio" id="noSSL" disabled> NO SSL</label>
+        </div>
+      </div>
+      <div class="uk-margin">
+        <textarea class="uk-textarea" rows="2" placeholder="Textarea"></textarea>
+      </div>
+
+      <div class="uk-margin copy-btn-body">
+        <button class="uk-button uk-button-danger uk-width-1-1" id="copy-btn"><i class="fa-regular fa-trash-can"></i>Sil</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Custom JS -->
+<script>
+  $(document).ready(function() {
+    $('#domain-selector').select2();
+  });
+</script>
+<!-- Main JS -->
+<script src="../main.js"></script>
+</body>
+</html>

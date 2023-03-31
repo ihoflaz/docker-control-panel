@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Restore</title>
+  <link href="../img/whale.png" rel="icon" type="image/x-icon">
+  <!-- Font Awesome -->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/a6bbee7ca3.js"></script>
+  <!-- UIkit CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" rel="stylesheet"/>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+  <!-- DataRange Picker -->
+  <script crossorigin="anonymous"
+          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+          referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css"/>
+
+  <!-- Select2 Menu -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="../main.css" rel="stylesheet">
+  <link href="../css/backup-restore.css" rel="stylesheet">
+  <link href="../css/restore.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="navigation uk-flex uk-flex-column uk-width-1-1">
+    <div class="navbar">
+      <a href="../dashboard.html">
+        <button class="uk-button uk-button-default uk-align-left" id="home-btn"><i class="fa-solid fa-chevron-left"></i>DASHBOARD
+        </button>
+      </a>
+      <div class="uk-align-right theme-btns">
+        <div class="uk-button-group">
+          <button class="uk-button uk-button-default theme-btn" id="theme-btn-dark"><i class="fa-regular fa-sun"></i>
+          </button>
+          <button class="uk-button uk-button-default theme-btn" id="theme-btn-light"><i class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <h1>GERİ YÜKLE</h1>
+      <hr/>
+    </div>
+  </div>
+  <div class="alert-body uk-flex uk-flex-center">
+    <div class="alert-content uk-width-2-3">
+      <div class="uk-alert-primary" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <h4><i class="fa-solid fa-circle-info"></i>https://alpha1.drupal.hajans.net sitesi restore ediliyor...</h4>
+        <p>https://alpha1.drupal.hajans.net sitesinin yedeklemesini restore etmek üzeresiniz.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-body uk-flex uk-flex-center">
+    <form class="uk-form-horizontal uk-width-3-4">
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-unvan">Ünvan</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" disabled id="form-horizontal-unvan" placeholder="Placeholder" type="text">
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-marka">Marka Adı</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" disabled id="form-horizontal-marka" placeholder="Placeholder" type="text">
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center" id="domain-container">
+        <label class="uk-form-label" for="form-horizontal-domain">Domain</label>
+        <div class="uk-form-controls">
+          <div class="test">
+            <input class="uk-input form-domain" disabled id="form-horizontal-domain" placeholder="Placeholder"
+                   type="text">
+            <select disabled id="domain-selector">
+              <option value="1">.com</option>
+              <option value="2">.net</option>
+              <option value="3">.org</option>
+              <option value="4">.gov</option>
+              <option value="5">.edu</option>
+              <option value="6">.int</option>
+              <option value="7">.info</option>
+              <option value="8">.asia</option>
+              <option value="9">.aero</option>
+              <option value="10">.biz</option>
+              <option value="11">.cat</option>
+              <option value="12">.coop</option>
+              <option value="13">.int</option>
+              <option value="14">.jobs</option>
+              <option value="15">.mil</option>
+              <option value="16">.mobi</option>
+              <option value="17">.museum</option>
+              <option value="18">.pro</option>
+              <option value="19">.tel</option>
+              <option value="20">.travel</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-server">Server</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" disabled id="form-horizontal-server">
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-ip">IP Adresi</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" disabled id="form-horizontal-ip">
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-uygulama">Uygulama</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" disabled id="form-horizontal-uygulama">
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <label class="uk-form-label" for="form-horizontal-branch">Branch</label>
+        <div class="uk-form-controls">
+          <select class="uk-select" disabled id="form-horizontal-branch">
+            <option>Option 01</option>
+            <option>Option 02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="uk-margin uk-flex uk-flex-center">
+        <div class="uk-form-controls uk-form-controls-text uk-width-1-1 uk-flex uk-flex-around">
+          <label><input class="uk-radio" name="radio1" type="radio" id="SSL" disabled> Let's Encrypt</label>
+          <label><input class="uk-radio" name="radio1" type="radio" id="evSSL" disabled> EV SSL</label>
+          <label><input class="uk-radio" name="radio1" type="radio" id="noSSL" disabled> NO SSL</label>
+        </div>
+      </div>
+
+      <div class="uk-margin">
+        <textarea class="uk-textarea" placeholder="Textarea" rows="2"></textarea>
+      </div>
+    </form>
+  </div>
+  <hr>
+  <div class="uk-margin date-picker-body uk-flex uk-flex-column">
+    <div class="date-picker-content">
+      <div class="data-picker-header uk-width-1-1">
+        <h1>TARİH ARALIĞI SEÇİNİZ</h1>
+      </div>
+      <div class="date-pickers uk-width-1-1 uk-flex uk-flex-around">
+        <input name="daterange" type="text" value="01/01/2018 - 01/15/2018"/>
+      </div>
+      <div class="uk-margin copy-btn-body uk-flex uk-flex-around">
+        <button class="uk-button uk-button-primary uk-width-1-2 copy-btn"><i class="fa-solid fa-list"></i>Listele
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="uk-margin list-table-body uk-flex uk-flex-column">
+    <div class="list-table-content">
+      <div class="list-tables uk-flex uk-flex-center">
+        <table class="uk-table uk-table-striped uk-width-3-4" id="table-list">
+          <thead>
+          <tr>
+            <th>SEÇİNİZ</th>
+            <th>YEDEKLENDİĞİ TARİH SAAT</th>
+            <th>IMAGE</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><input class="uk-radio" name="radio2" type="radio"></td>
+            <td>22.11.2021 - 16:19</td>
+            <td>backup-16:19-22-11-2021.tar.gz.iso</td>
+          </tr>
+          <tr>
+            <td><input class="uk-radio" name="radio2" type="radio"></td>
+            <td>14.11.2021 - 11:19</td>
+            <td>backup-14:11-22-11-2021.tar.gz.iso</td>
+          </tr>
+          <tr>
+            <td><input class="uk-radio" name="radio2" type="radio"></td>
+            <td>31.11.2021 - 22:33</td>
+            <td>backup-16:19-22-11-2021.tar.gz.iso</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="uk-margin copy-btn-body uk-flex uk-flex-around">
+        <button class="uk-button uk-button-primary uk-width-1-2 copy-btn"><i class="fa-solid fa-server"></i>Geri Yükle
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main JS -->
+<script src="../main.js"></script>
+<!-- Custom JS -->
+<script>
+  $(function () {
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'center',
+      startDate: "02/26/2022",
+      endDate: "03/04/2022",
+    });
+  });
+  $(document).ready(function () {
+    $('#domain-selector').select2();
+  });
+</script>
+
+</body>
+</html>

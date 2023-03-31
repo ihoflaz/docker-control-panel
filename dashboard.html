@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Dashboard</title>
+  <link href="./img/whale.png" rel="icon" type="image/x-icon">
+  <!-- Font Awesome -->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/a6bbee7ca3.js"></script>
+  <!-- UIkit CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" rel="stylesheet"/>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+  <!-- Select2 Menu -->
+  <script crossorigin="anonymous"
+          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+          referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="main.css" rel="stylesheet">
+  <link href="./css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+<div class="container uk-dark">
+  <div class="navigation uk-flex uk-flex-column uk-width-1-1">
+    <div class="navbar">
+      <a href="#">
+        <button class="uk-button uk-button-default uk-align-left green-btn" id="home-btn"><i
+          class="fa-solid fa-bars-progress"></i>DASHBOARD
+        </button>
+      </a>
+      <div class="uk-align-right theme-btns">
+        <div class="uk-button-group">
+          <button class="uk-button uk-button-default theme-btn" id="theme-btn-dark"><i class="fa-regular fa-sun"></i>
+          </button>
+          <button class="uk-button uk-button-default theme-btn" id="theme-btn-light"><i class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <h1>MEVCUT YAPILAR</h1>
+      <hr/>
+    </div>
+  </div>
+  <div class="create-btn-body" uk-grid>
+    <select id="search-server">
+      <option></option>
+      <option value="1">https://hizmetteknikhirdavat.com</option>
+      <option value="2">https://hth.com</option>
+      <option value="3">https://abc.com</option>
+      <option value="4">https://deneme.com</option>
+      <option value="5">https://deneme.net</option>
+    </select>
+    <a class="uk-button uk-button-default green-btn" href="./html/create.html" id="create-btn"><i
+      class="fa-solid fa-plus"></i>Yeni
+      Ekle
+    </a>
+  </div>
+  <div class="main-table">
+    <table class="uk-table uk-table-striped" id="table-dashboard">
+      <thead>
+      <tr>
+        <th>SSL</th>
+        <th>ÜNVAN</th>
+        <th>DOMAIN</th>
+        <th>UYGULAMA</th>
+        <th>BRANCH</th>
+        <th>İŞLEM</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><img alt="evSSL" src="./img/evSSL.svg"></td>
+        <td>
+          <div>Hizmet Teknik Hırdavat</div>
+        </td>
+        <td>https://hizmetteknikhirdavat.com</td>
+        <td>Drupal</td>
+        <td>master</td>
+        <td>
+          <div>
+            <a href="./html/update.html">
+              <button class="uk-button uk-button-default create-btn" type="button"><i
+                class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <span class="tooltiptext">Düzenle</span></a>
+            <a href="./html/copy.html">
+              <button class="uk-button uk-button-default copy-btn" type="button"><i class="fa-regular fa-clone"></i>
+              </button>
+              <span class="tooltiptext">Kopyala</span></a>
+            <a href="./html/remove.html">
+              <button class="uk-button uk-button-default remove-btn" type="button"><i
+                class="fa-regular fa-trash-can"></i></button>
+              <span class="tooltiptext">Sil</span></a>
+            <a href="./html/backup-restore.html">
+              <button class="uk-button uk-button-default backup-btn" type="button"><i
+                class="fa-solid fa-box-archive"></i></button>
+              <span class="tooltiptext">Yedekle</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img alt="letsSSL" src="./img/letsSSL.svg"></td>
+        <td>
+          <div>Hizmet Teknik Hırdavat</div>
+        </td>
+        <td>https://hth.com</td>
+        <td>HERP</td>
+        <td>b2b</td>
+        <td>
+          <div>
+            <a href="./html/update.html">
+              <button class="uk-button uk-button-default create-btn" type="button"><i
+                class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <span class="tooltiptext">Düzenle</span></a>
+            <a href="./html/copy.html">
+              <button class="uk-button uk-button-default copy-btn" type="button"><i class="fa-regular fa-clone"></i>
+              </button>
+              <span class="tooltiptext">Kopyala</span></a>
+            <a href="./html/remove.html">
+              <button class="uk-button uk-button-default remove-btn" type="button"><i
+                class="fa-regular fa-trash-can"></i></button>
+              <span class="tooltiptext">Sil</span></a>
+            <a href="./html/backup-restore.html">
+              <button class="uk-button uk-button-default backup-btn" type="button"><i
+                class="fa-solid fa-box-archive"></i></button>
+              <span class="tooltiptext">Yedekle</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img alt="noSSL" src="./img/noSSL.svg"></td>
+        <td>
+          <div>Hizmet Teknik Hırdavat</div>
+        </td>
+        <td>http://abc.com</td>
+        <td>NextCloud</td>
+        <td>c2c</td>
+        <td>
+          <div>
+            <a href="./html/update.html">
+              <button class="uk-button uk-button-default create-btn" type="button"><i
+                class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <span class="tooltiptext">Düzenle</span></a>
+            <a href="./html/copy.html">
+              <button class="uk-button uk-button-default copy-btn" type="button"><i class="fa-regular fa-clone"></i>
+              </button>
+              <span class="tooltiptext">Kopyala</span></a>
+            <a href="./html/remove.html">
+              <button class="uk-button uk-button-default remove-btn" type="button"><i
+                class="fa-regular fa-trash-can"></i></button>
+              <span class="tooltiptext">Sil</span></a>
+            <a href="./html/backup-restore.html">
+              <button class="uk-button uk-button-default backup-btn" type="button"><i
+                class="fa-solid fa-box-archive"></i></button>
+              <span class="tooltiptext">Yedekle</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img alt="letsSSL" src="./img/letsSSL.svg"></td>
+        <td>
+          <div>Hizmet Teknik Hırdavat</div>
+        </td>
+        <td>https://deneme.com</td>
+        <td>Drupal</td>
+        <td>master</td>
+        <td>
+          <div>
+            <a href="./html/update.html">
+              <button class="uk-button uk-button-default create-btn" type="button"><i
+                class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <span class="tooltiptext">Düzenle</span></a>
+            <a href="./html/copy.html">
+              <button class="uk-button uk-button-default copy-btn" type="button"><i class="fa-regular fa-clone"></i>
+              </button>
+              <span class="tooltiptext">Kopyala</span></a>
+            <a href="./html/remove.html">
+              <button class="uk-button uk-button-default remove-btn" type="button"><i
+                class="fa-regular fa-trash-can"></i></button>
+              <span class="tooltiptext">Sil</span></a>
+            <a href="./html/backup-restore.html">
+              <button class="uk-button uk-button-default backup-btn" type="button"><i
+                class="fa-solid fa-box-archive"></i></button>
+              <span class="tooltiptext">Yedekle</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><img alt="letsSSL" src="./img/letsSSL.svg"></td>
+        <td>
+          <div>Hizmet Teknik Hırdavat</div>
+        </td>
+        <td>https://deneme2.com</td>
+        <td>HERP</td>
+        <td>slave</td>
+        <td>
+          <div>
+            <a href="./html/update.html">
+              <button class="uk-button uk-button-default create-btn" type="button"><i
+                class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <span class="tooltiptext">Düzenle</span></a>
+            <a href="./html/copy.html">
+              <button class="uk-button uk-button-default copy-btn" type="button"><i class="fa-regular fa-clone"></i>
+              </button>
+              <span class="tooltiptext">Kopyala</span></a>
+            <a href="./html/remove.html">
+              <button class="uk-button uk-button-default remove-btn" type="button"><i
+                class="fa-regular fa-trash-can"></i></button>
+              <span class="tooltiptext">Sil</span></a>
+            <a href="./html/backup-restore.html">
+              <button class="uk-button uk-button-default backup-btn" type="button"><i
+                class="fa-solid fa-box-archive"></i></button>
+              <span class="tooltiptext">Yedekle</span></a>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="uk-flex uk-flex-center uk-align-center">
+    <div class="paging-list pagination">
+      <ul class="uk-pagination" uk-margin>
+        <li><a href="#"><span uk-pagination-previous></span></a></li>
+        <li class="uk-active"><span>1</span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="uk-disabled"><span>...</span></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li class="uk-disabled"><span>...</span></li>
+        <li><a href="#">20</a></li>
+        <li><a href="#"><span uk-pagination-next></span></a></li>
+      </ul>
+    </div>
+    <div class="uk-width-1-6 paging-select">
+      <div class="uk-form-controls">
+        <select class="uk-select" id="form-stacked-select">
+          <option>5 / page</option>
+          <option>50 / page</option>
+          <option>100 / page</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Custom JS -->
+<script>
+  $(document).ready(function () {
+    $('#search-server').select2({
+      placeholder: "ARA",
+    });
+  });
+</script>
+<!-- Main JS -->
+<script src="main.js"></script>
+</body>
+</html>

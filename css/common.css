@@ -1,0 +1,139 @@
+.alert-body {
+  margin-top: 38px;
+}
+
+.uk-alert-primary {
+  border-style: solid;
+  border-width: 0 0 0 8px;
+  border-left-color: rgb(30, 135, 240);
+  background-color: white;
+  box-shadow: 0 5px 10px 1px rgb(67 90 111 / 42%);
+  border-radius: 5px;
+}
+
+.uk-alert-primary h4 {
+  color: #234361;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.uk-alert-primary h4 i {
+  color: rgb(30, 135, 240);
+  margin-right: 10px;
+}
+
+.uk-alert-primary p {
+  color: #66788A;
+  margin: 2px 0 0 30px;
+  font-weight: normal;
+}
+
+.form-body {
+  margin-top: 57px;
+}
+
+.uk-form-label {
+  width: 100px !important;
+  text-align: right;
+  margin-top: 0 !important;
+  color: #455A64;
+  margin-right: 45px;
+  font-size: 23px !important;
+}
+
+.uk-form-controls {
+  font-size: 14px !important;
+}
+
+.uk-input, .uk-select {
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #78909C;
+}
+
+.addon {
+  margin-left: 15px;
+  border-radius: 2px;
+  border-color: #4CAF50;
+  color: #4CAF50;
+  font-size: 12px;
+  padding: 0 10px 0 0;
+  text-transform: capitalize !important;
+}
+
+.addon i {
+  margin: 0 5px 0 10px;
+}
+
+.radio-label {
+  margin-top: 10px;
+}
+
+.radio-label label {
+  font-size: 12px;
+}
+
+.radio-label input {
+  margin-right: 10px;
+}
+
+.radio-label label:nth-child(1) {
+  margin-right: 10px;
+}
+
+.form-domain {
+  width: 125px !important;
+  border-right-width: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.test {
+  display: inline-table;
+}
+
+.select2-selection.select2-selection--single {
+  background-color: #66788A;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0 !important;
+  width: 75px;
+  height: 40px;
+  border: 1px solid #78909C;
+  border-left: 0;
+}
+
+.select2-selection__rendered {
+  color: white !important;
+  line-height: 40px !important;
+  text-align: center;
+}
+
+.uk-form-horizontal .uk-form-controls {
+  margin: 0;
+}
+
+#domain-container {
+  position: relative;
+}
+
+#addon-btn {
+  position: absolute;
+  left: 75%;
+}
+
+.copy-btn-body button i {
+  margin-right: 10px;
+}
+
+#copy-btn {
+  border-radius: 2px;
+  background-color: #4CAF50;
+}
+
+.uk-textarea {
+  display: none;
+}

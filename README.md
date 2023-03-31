@@ -1,0 +1,1 @@
+# <img src="./img/whale.png" alt="whale" width="30"/> Docker Control Panel

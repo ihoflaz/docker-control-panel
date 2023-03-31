@@ -1,0 +1,149 @@
+.main-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table-dashboard, #table-dashboard thead tr th {
+  text-align: center;
+}
+
+td .uk-button {
+  font-size: 27px;
+  color: white;
+  padding: 0 5.5px;
+}
+
+.uk-grid {
+  justify-content: space-around;
+}
+
+#create-btn i {
+  margin-right: 10px;
+}
+
+#create-btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: #4CAF50 !important;
+  margin: 30px 45px;
+  padding: 0;
+}
+
+.create-btn-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.create-btn {
+  background-color: #039BE5 !important;
+}
+
+.copy-btn {
+  background-color: #388E3C !important;
+}
+
+.remove-btn {
+  background-color: #B71C1C !important;
+  padding: 0 7.19px !important;
+}
+
+.backup-btn {
+  background-color: #FFB300 !important;
+}
+
+tr {
+  line-height: 58px !important;
+}
+
+td {
+  border: 2px solid #CFD8DC;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+thead tr {
+  background-color: #f8f8f8;
+}
+
+thead tr th {
+  border: 2px solid #CFD8DC;
+  color: black !important;
+  font-size: 20px !important;
+}
+
+.paging-select {
+  margin-left: 65px;
+}
+
+.paging-list ul {
+  margin: 0;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+td div a {
+  position: relative;
+}
+
+td div a .tooltiptext {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 20px;
+  padding: 2px;
+  position: absolute;
+  z-index: 1;
+  top: -42px;
+  left: -27px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+td div a:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+td div a .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+}
+
+.uk-grid > * {
+  padding-left: 0 !important;
+}
+
+.select2-selection.select2-selection--single {
+  width: 350px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.select2-selection__rendered {
+  line-height: 50px !important;
+}
+
+.select2-selection__arrow {
+  top: 43px !important;
+  right: -143px !important;
+}
+
+.select2-dropdown.select2-dropdown--below {
+  top: -30px;
+  width: 350px !important;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 87px 0 0 0;
+  line-height: 1;
+}
+
+hr {
+  border-top: 1px dashed #90A4AE;
+  margin: 19px 0 0 0;
+}
+
+#home-btn {
+  margin: 29px 0 0 81px;
+  font-size: 18px;
+  line-height: 21px;
+  width: 181px;
+  height: 44px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#home-btn i {
+  margin-right: 9px;
+}
+
+.theme-btn {
+  border-radius: 2px;
+  color: white;
+}
+
+#theme-btn-light {
+  border: 1px solid #455A64;
+  background-color: #455A64;
+  border-radius: 0 8px 8px 0;
+}
+
+#theme-btn-dark {
+  border: 1px solid #455A64;
+  border-radius: 8px 0 0 8px;
+}
+
+#theme-btn-dark i {
+  color: #90A4AE;
+}
+
+#theme-btn-light i {
+
+  color: #FBBA07;
+}
+
+.theme-btns {
+  margin: 13px 17px;
+}
+
+.uk-button-group {
+  justify-content: flex-end;
+  width: 100px;
+  height: 50px;
+}
+
+.uk-button {
+  font-size: 20px;
+}
